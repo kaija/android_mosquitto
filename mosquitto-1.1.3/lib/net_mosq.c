@@ -42,7 +42,11 @@ POSSIBILITY OF SUCH DAMAGE.
 #endif
 
 #ifdef __FreeBSD__
-#  include <netinet/in.h>
+#include <netinet/in.h>
+#endif
+
+#ifdef __ANDROID__
+#include <netinet/in.h>
 #endif
 
 #ifdef __SYMBIAN32__
